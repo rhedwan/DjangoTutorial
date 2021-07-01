@@ -1,6 +1,7 @@
 from django import urls
 from django.urls import path
-from .views import *
-urlspatterns = [
-    path('',  , name='post_list')
+from . import views
+
+urlpatterns = [
+    path('', views.post_list , name='post_list')
 ]
